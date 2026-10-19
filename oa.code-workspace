@@ -1,0 +1,59 @@
+{
+  "folders": [
+    { "name": "① 后端 Django", "path": "backend" },
+    { "name": "② 前端 Vue", "path": "frontend" },
+    { "name": "③ 脚本与文档", "path": "scripts" },
+    { "name": "④ MySQL", "path": "mysql" }
+  ],
+  "settings": {
+    "python.defaultInterpreterPath": "${workspaceFolder:① 后端 Django}\\.venv\\Scripts\\python.exe",
+    "python.analysis.extraPaths": [
+      "${workspaceFolder:① 后端 Django}"
+    ],
+    "python.analysis.typeCheckingMode": "basic",
+    "python.terminal.activateEnvironment": true,
+
+    "files.exclude": {
+      "**/__pycache__": true,
+      "**/*.pyc": true,
+      "**/.pytest_cache": true,
+      "**/.venv": true,
+      "**/node_modules": true,
+      "**/dist": true,
+      "**/.runtime": true
+    },
+    "search.exclude": {
+      "**/node_modules": true,
+      "**/.venv": true,
+      "**/dist": true,
+      "**/__pycache__": true,
+      "**/.runtime": true,
+      "**/*.min.js": true,
+      "**/package-lock.json": true,
+      "mysql/*.sql": true,
+      "**/migrations/**": true
+    },
+    "files.encoding": "utf8",
+    "files.eol": "\n",
+    "editor.tabSize": 2,
+    "editor.fontSize": 14,
+    "editor.minimap.enabled": true,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.indentation": true,
+    "editor.renderWhitespace": "boundary",
+    "editor.stickyScroll.enabled": true,
+    "workbench.editor.enablePreview": false,
+    "explorer.compactFolders": false,
+    "breadcrumbs.enabled": true,
+    "telemetry.telemetryLevel": "off"
+  },
+  "extensions": {
+    "recommendations": [
+      "vue.volar",
+      "ms-python.python",
+      "ms-python.vscode-pylance",
+      "batisteo.vue-aliases-tsconfig",
+      "dbaeumer.vscode-eslint"
+    ]
+  }
+}

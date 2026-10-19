@@ -1,0 +1,53 @@
+# ---- 环境与密钥（严禁提交）----
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ---- Django ----
+db.sqlite3
+staticfiles/
+media/
+logs/
+*.log
+celerybeat-schedule*
+backend/_*.txt
+*.bak
+
+# ---- 前端 ----
+node_modules/
+dist/
+.vite/
+*.local
+
+# ---- 数据库数据目录 ----
+mysql/
+
+# ---- 工具与备份 ----
+.backup/
+.runtime/
+.tools/
+.workbuddy/
+*.zip
+*.7z
+*.rar
+
+# ---- 系统 ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- 独立脚手架（不属于本项目主体）----
+backend/fastapi-skeleton/
